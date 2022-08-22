@@ -1,8 +1,9 @@
-from flask import Flask, render_template
+#app/main.py
+
+from flask import Flask
+
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-   return render_template('neutrons_U238.html')
-if __name__ == '__main__':
-   app.run()
+@app.route("/")
+def home_view():
+        return "<h1>Hello World!</h1>"
